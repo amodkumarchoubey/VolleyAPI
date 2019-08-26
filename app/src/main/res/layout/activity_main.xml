@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:background="#414af4"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Get Response" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonRequest"
+        android:layout_margin="50dp"
+        android:fillViewport="true"
+        android:scrollbarSize="10dp"
+        android:scrollbars="horizontal">
+
+        <TextView
+            android:id="@+id/txt_respo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="" />
+    </ScrollView>
+
+</RelativeLayout>
